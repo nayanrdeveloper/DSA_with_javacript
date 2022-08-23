@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Array Traversing</title>
+    <script>
+      let data = [28, 56, 2, 89, 5, 34, 90, 78, 89, 54, 16, 53, 63];
+
+      // all element traversing using loop
+      // for (let i=0; i < data.length; i++){
+      //     document.write(`${data[i]} <br/>`);
+      // }
+
+      function getElement(){
+        let indexNumber = document.getElementById('element_index').value;
+        if (!isNaN(indexNumber) && indexNumber >= 0 && indexNumber < data.length){
+            alert(data[indexNumber]);
+        }
+        else{
+            alert("Enter please valid number");
+        }
+        
+      }
+
+    </script>
+  </head>
+  <body>
+    <input type="text" name="" id="element_index" />
+    <button onclick="getElement()">Get Element</button>
+  </body>
+</html>
